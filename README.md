@@ -151,4 +151,4 @@
 
 ### 許可
 
-此專案使用 MIT 許可證。詳細信息請參閱 [LICENSE](LICENSE) 文件。
+此專案使用 The Unlicense 許可證。詳細信息請參閱 [LICENSE](LICENSE) 文件。
