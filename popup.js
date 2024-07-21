@@ -526,15 +526,37 @@ function loadConfig(config) {
 }
 
 function initializeConfig() {
+    // const defaultConfig = {
+    //     roomListMax: 10,
+    //     roomListIndex: 0,
+    //     roomList: [],
+    //     messageMax: 10,
+    //     messageListIndex: 0,
+    //     messageList: [],
+    //     token: ''
+    // };
     const defaultConfig = {
-        roomListMax: 10,
-        roomListIndex: 0,
-        roomList: [],
-        messageMax: 10,
-        messageListIndex: 0,
-        messageList: [],
-        token: ''
-    };
+        "roomListMax": 10,
+        "roomListIndex": 0,
+        "roomList": [
+          {
+            "roomName": "七七",
+            "roomId": "23899550"
+          }
+        ],
+        "messageMax": 10,
+        "messageListIndex": 0,
+        "messageList": [
+          {
+            "buttonName": "gachi",
+            "message": "七七天下第一可愛！"
+          },
+          {
+            "buttonName": "anti",
+            "message": "七七是墊的！"
+          }
+        ]
+      };
     chrome.storage.local.set({ config: defaultConfig });
     return defaultConfig;
 }
